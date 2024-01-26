@@ -13,10 +13,10 @@ struct AppUserCell: View {
             AppProfileImage()
             
             VStack(alignment: .leading) {
-                Text("nopnapatn")
+                Text("neuw")
                     .fontWeight(.semibold)
                 
-                Text("Description")
+                Text("@nopnapatn")
             }
             .font(.footnote)
             

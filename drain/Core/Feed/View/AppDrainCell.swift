@@ -19,9 +19,15 @@ struct AppDrainCell: View {
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
-                        Text("nopnapatn")
-                            .font(.footnote)
-                            .fontWeight(.semibold)
+                        HStack {
+                            Text("neuw")
+                                .font(.footnote)
+                                .fontWeight(.semibold)
+                            
+                            Text("@nopnapatn")
+                                .font(.footnote)
+                                .foregroundColor(.gray)
+                        }
                         
                         Spacer()
                         
