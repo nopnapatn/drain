@@ -1,5 +1,5 @@
 //
-//  AppCell.swift
+//  AppDrainCell.swift
 //  drain
 //
 //  Created by Nopnapat Norasri on 26/1/2567 BE.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AppCell: View {
+struct AppDrainCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
@@ -83,5 +83,5 @@ struct AppCell: View {
 }
 
 #Preview {
-    AppCell()
+    AppDrainCell()
 }

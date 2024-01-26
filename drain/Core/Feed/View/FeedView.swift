@@ -13,7 +13,7 @@ struct FeedView: View {
             ScrollView(showsIndicators: false) {
                 LazyVStack {
                     ForEach(0 ... 10, id: \.self) {
-                        cell in AppCell()
+                        cell in AppDrainCell()
                         Divider()
                     }
                 }

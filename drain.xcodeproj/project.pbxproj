@@ -23,7 +23,7 @@
 		D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */; };
 		D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B162B63E79D00ED4A53 /* AppTapView.swift */; };
 		D6F99B1B2B63EB8200ED4A53 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */; };
-		D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */; };
+		D6F99B1D2B63F12C00ED4A53 /* AppDrainCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1C2B63F12C00ED4A53 /* AppDrainCell.swift */; };
 		D6F99B212B640C1400ED4A53 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B202B640C1400ED4A53 /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
@@ -64,7 +64,7 @@
 		D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiler.swift; sourceTree = "<group>"; };
 		D6F99B162B63E79D00ED4A53 /* AppTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTapView.swift; sourceTree = "<group>"; };
 		D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		D6F99B1C2B63F12C00ED4A53 /* AppDrainCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDrainCell.swift; sourceTree = "<group>"; };
 		D6F99B202B640C1400ED4A53 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -267,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */,
-				D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */,
+				D6F99B1C2B63F12C00ED4A53 /* AppDrainCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -424,7 +424,7 @@
 				D6F99B0D2B63DD1100ED4A53 /* TextFieldModifier.swift in Sources */,
 				D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */,
 				D6218C962B62637300855E4B /* SignInView.swift in Sources */,
-				D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */,
+				D6F99B1D2B63F12C00ED4A53 /* AppDrainCell.swift in Sources */,
 				D6F99B102B63DF6D00ED4A53 /* ButtonModifiler.swift in Sources */,
 				D6C2081F2B6411DE00671856 /* AppUserCell.swift in Sources */,
 				D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */,
