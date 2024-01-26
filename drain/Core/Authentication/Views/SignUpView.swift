@@ -12,6 +12,7 @@ struct SignUpView: View {
     @State private var email = ""
     @State private var password = ""
     @State private var confirmPassword = ""
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         VStack {
@@ -64,7 +65,7 @@ struct SignUpView: View {
                     .modifier(TextFieldModifier())
                 
                 Button {
-//                    function action something..
+                    
                 } label: {
                     Text("Sign Up")
                         .modifier(ButtonModifiler())
@@ -75,8 +76,8 @@ struct SignUpView: View {
                 
                 Divider()
                 
-              NavigationLink {
-                    Text("SignIn View")
+              Button {
+                    dismiss()
                 } label: {
                     HStack(spacing: 3) {
                         Text("Already have an account?")

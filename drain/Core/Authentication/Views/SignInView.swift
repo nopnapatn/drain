@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct SignInView: View {
     @State private var email = ""
     @State private var password = ""
     
@@ -48,7 +48,7 @@ struct LoginView: View {
                 }
                 
                 Button {
-//                function action something..
+                    
                 } label: {
                     Text("Sign In")
                         .modifier(ButtonModifiler())
@@ -60,7 +60,8 @@ struct LoginView: View {
                 Divider()
                 
                 NavigationLink {
-                    Text("SignIn View")
+                    SignUpView()
+                        .navigationBarBackButtonHidden(true)
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account")
@@ -77,5 +78,5 @@ struct LoginView: View {
 }
 
 #Preview {
-    LoginView()
+    SignInView()
 }
