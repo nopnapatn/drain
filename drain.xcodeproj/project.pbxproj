@@ -20,6 +20,8 @@
 		D6F99B102B63DF6D00ED4A53 /* ButtonModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B0F2B63DF6D00ED4A53 /* ButtonModifiler.swift */; };
 		D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */; };
 		D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B162B63E79D00ED4A53 /* AppTapView.swift */; };
+		D6F99B1B2B63EB8200ED4A53 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */; };
+		D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		D6F99B0F2B63DF6D00ED4A53 /* ButtonModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiler.swift; sourceTree = "<group>"; };
 		D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiler.swift; sourceTree = "<group>"; };
 		D6F99B162B63E79D00ED4A53 /* AppTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTapView.swift; sourceTree = "<group>"; };
+		D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,7 @@
 		D6218C8B2B6261B800855E4B /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				D6F99B182B63EB6200ED4A53 /* Feed */,
 				D6218C902B62626600855E4B /* Authentication */,
 				D6218C912B6262C100855E4B /* Root */,
 				D6F99B132B63E63000ED4A53 /* TabBar */,
@@ -231,6 +236,23 @@
 				D6F99B162B63E79D00ED4A53 /* AppTapView.swift */,
 			);
 			path = TabBar;
+			sourceTree = "<group>";
+		};
+		D6F99B182B63EB6200ED4A53 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B192B63EB6B00ED4A53 /* View */,
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		D6F99B192B63EB6B00ED4A53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */,
+				D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,9 +386,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69E5D022B62B0A20088728F /* SignUpView.swift in Sources */,
+				D6F99B1B2B63EB8200ED4A53 /* FeedView.swift in Sources */,
 				D6F99B0D2B63DD1100ED4A53 /* TextFieldModifier.swift in Sources */,
 				D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */,
 				D6218C962B62637300855E4B /* SignInView.swift in Sources */,
+				D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */,
 				D6F99B102B63DF6D00ED4A53 /* ButtonModifiler.swift in Sources */,
 				D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */,
 				D60E12D52B62598A00AE4425 /* ContentView.swift in Sources */,

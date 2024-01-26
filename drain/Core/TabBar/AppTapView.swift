@@ -12,7 +12,7 @@ struct AppTabView: View {
     
     var body: some View {
         TabView(selection: $selectedTab) {
-            Text("Feed View")
+            FeedView()
                 .tabItem { Image(systemName: selectedTab == 0 ? "house.fill" : "house").environment(\.symbolVariants, selectedTab == 0 ? .fill : .none)
                 }
                 .onAppear { selectedTab = 0 }
@@ -25,7 +25,7 @@ struct AppTabView: View {
                 .tag(1)
             
             Text("Upload Drain")
-                .tabItem { Image(systemName: "plus")
+                .tabItem { Image(systemName: selectedTab == 2 ? "person.fill" : "person").environment(\.symbolVariants, selectedTab == 2 ? .fill : .none)
                 }
                 .onAppear { selectedTab = 2 }
                 .tag(2)
@@ -36,8 +36,8 @@ struct AppTabView: View {
                 .onAppear { selectedTab = 3 }
                 .tag(3)
             
-            Text("Profile")
-                .tabItem { Image(systemName: selectedTab == 4 ? "person.fill" : "person").environment(\.symbolVariants, selectedTab == 4 ? .fill : .none)
+            Text("Message")
+                .tabItem { Image(systemName: selectedTab == 4 ? "envelope.fill" : "envelope").environment(\.symbolVariants, selectedTab == 4 ? .fill : .none)
                 }
                 .onAppear { selectedTab = 4 }
                 .tag(4)
