@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  SignInView.swift
 //  drain
 //
 //  Created by Nopnapat Norasri on 25/1/2567 BE.
@@ -30,50 +30,37 @@ struct LoginView: View {
                 
                 VStack {
                     TextField("Enter your email", text: $email)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
+                        .modifier(TextFieldModifier())
                     
                     SecureField("Enter your password", text: $password)
-                        .font(.subheadline)
-                        .padding(12)
-                        .background(Color(.systemGray6))
-                        .cornerRadius(10)
-                        .padding(.horizontal, 24)
+                        .modifier(TextFieldModifier())
                 }
                 
                 NavigationLink {
                     Text("Forgot Password")
                 } label: {
                     Text("Forgot Password?")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .padding(.top)
+                        .modifier(TextModifiler())
+                        .padding(.top, 8)
                         .padding(.trailing)
-                        .foregroundColor(.black)
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
                 
                 Button {
 //                function action something..
                 } label: {
-                    Text("Login")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 352, height: 44)
-                        .background(.black)
-                        .cornerRadius(8)
+                    Text("Sign In")
+                        .modifier(ButtonModifiler())
                 }
+                .padding(.vertical)
                 
                 Spacer()
                 
                 Divider()
                 
                 NavigationLink {
-                    Text("Registration View")
+                    Text("SignIn View")
                 } label: {
                     HStack(spacing: 3) {
                         Text("Don't have an account")

@@ -25,82 +25,49 @@ struct SignUpView: View {
             VStack {
                 HStack {
                     Text("Username")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .padding(.horizontal)
-                        .padding(.leading)
-                        .foregroundColor(.black)
+                        .modifier(TextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
                     Spacer()
                 }
                 TextField("Enter your username", text: $username)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 HStack {
                     Text("Email")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .padding(.horizontal)
-                        .padding(.leading)
-                        .foregroundColor(.black)
+                        .modifier(TextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
                     Spacer()
                 }
                 TextField("Enter your email", text: $email)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 HStack {
                     Text("Password")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .padding(.horizontal)
-                        .padding(.leading)
-                        .foregroundColor(.black)
+                        .modifier(TextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
                     Spacer()
                 }
                 SecureField("Enter your password", text: $password)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 HStack {
                     Text("Confirm Password")
-                        .font(.footnote)
-                        .fontWeight(.semibold)
-                        .padding(.horizontal)
-                        .padding(.leading)
-                        .foregroundColor(.black)
+                        .modifier(TextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
                     Spacer()
                 }
                 SecureField("Enter your confirm password", text: $confirmPassword)
-                    .font(.subheadline)
-                    .padding(12)
-                    .background(Color(.systemGray6))
-                    .cornerRadius(10)
-                    .padding(.horizontal, 24)
+                    .modifier(TextFieldModifier())
                 
                 Button {
 //                    function action something..
                 } label: {
                     Text("Sign Up")
-                        .font(.subheadline)
-                        .fontWeight(.semibold)
-                        .foregroundStyle(.white)
-                        .frame(width: 352, height: 44)
-                        .background(.black)
-                        .cornerRadius(8)
+                        .modifier(ButtonModifiler())
                 }
                 .padding(.vertical)
                 
