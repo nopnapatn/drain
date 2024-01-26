@@ -16,12 +16,15 @@
 		D60E12F02B62598B00AE4425 /* drainUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E12EF2B62598B00AE4425 /* drainUITestsLaunchTests.swift */; };
 		D6218C962B62637300855E4B /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6218C952B62637300855E4B /* SignInView.swift */; };
 		D69E5D022B62B0A20088728F /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69E5D012B62B0A20088728F /* SignUpView.swift */; };
+		D6C2081D2B64113200671856 /* AppProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C2081C2B64113200671856 /* AppProfileImage.swift */; };
+		D6C2081F2B6411DE00671856 /* AppUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C2081E2B6411DE00671856 /* AppUserCell.swift */; };
 		D6F99B0D2B63DD1100ED4A53 /* TextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B0C2B63DD1100ED4A53 /* TextFieldModifier.swift */; };
 		D6F99B102B63DF6D00ED4A53 /* ButtonModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B0F2B63DF6D00ED4A53 /* ButtonModifiler.swift */; };
 		D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */; };
 		D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B162B63E79D00ED4A53 /* AppTapView.swift */; };
 		D6F99B1B2B63EB8200ED4A53 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */; };
 		D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */; };
+		D6F99B212B640C1400ED4A53 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B202B640C1400ED4A53 /* ExploreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,12 +57,15 @@
 		D60E12EF2B62598B00AE4425 /* drainUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drainUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		D6218C952B62637300855E4B /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		D69E5D012B62B0A20088728F /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		D6C2081C2B64113200671856 /* AppProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProfileImage.swift; sourceTree = "<group>"; };
+		D6C2081E2B6411DE00671856 /* AppUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserCell.swift; sourceTree = "<group>"; };
 		D6F99B0C2B63DD1100ED4A53 /* TextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldModifier.swift; sourceTree = "<group>"; };
 		D6F99B0F2B63DF6D00ED4A53 /* ButtonModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifiler.swift; sourceTree = "<group>"; };
 		D6F99B112B63E1F000ED4A53 /* TextModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextModifiler.swift; sourceTree = "<group>"; };
 		D6F99B162B63E79D00ED4A53 /* AppTapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTapView.swift; sourceTree = "<group>"; };
 		D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCell.swift; sourceTree = "<group>"; };
+		D6F99B202B640C1400ED4A53 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,9 @@
 			isa = PBXGroup;
 			children = (
 				D60E12D12B62598A00AE4425 /* drain */,
+				D60E12D62B62598B00AE4425 /* Assets.xcassets */,
+				D60E12D22B62598A00AE4425 /* drainApp.swift */,
+				D60E12D42B62598A00AE4425 /* ContentView.swift */,
 				D60E12E22B62598B00AE4425 /* drainTests */,
 				D60E12EC2B62598B00AE4425 /* drainUITests */,
 				D60E12D02B62598A00AE4425 /* Products */,
@@ -117,9 +126,6 @@
 				D60E12D82B62598B00AE4425 /* Preview Content */,
 				D6218C8F2B62621700855E4B /* Services */,
 				D6218C8E2B6261F900855E4B /* Utils */,
-				D60E12D62B62598B00AE4425 /* Assets.xcassets */,
-				D60E12D22B62598A00AE4425 /* drainApp.swift */,
-				D60E12D42B62598A00AE4425 /* ContentView.swift */,
 			);
 			path = drain;
 			sourceTree = "<group>";
@@ -159,8 +165,10 @@
 		D6218C8B2B6261B800855E4B /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				D6F99B182B63EB6200ED4A53 /* Feed */,
 				D6218C902B62626600855E4B /* Authentication */,
+				D6C2081B2B64108500671856 /* Components */,
+				D6F99B1E2B640BE900ED4A53 /* Explore */,
+				D6F99B182B63EB6200ED4A53 /* Feed */,
 				D6218C912B6262C100855E4B /* Root */,
 				D6F99B132B63E63000ED4A53 /* TabBar */,
 			);
@@ -220,6 +228,15 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		D6C2081B2B64108500671856 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				D6C2081C2B64113200671856 /* AppProfileImage.swift */,
+				D6C2081E2B6411DE00671856 /* AppUserCell.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
 		D6F99B0B2B63D9E700ED4A53 /* ViewModifilers */ = {
 			isa = PBXGroup;
 			children = (
@@ -251,6 +268,22 @@
 			children = (
 				D6F99B1A2B63EB8200ED4A53 /* FeedView.swift */,
 				D6F99B1C2B63F12C00ED4A53 /* AppCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D6F99B1E2B640BE900ED4A53 /* Explore */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B1F2B640BF500ED4A53 /* View */,
+			);
+			path = Explore;
+			sourceTree = "<group>";
+		};
+		D6F99B1F2B640BF500ED4A53 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6F99B202B640C1400ED4A53 /* ExploreView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -385,6 +418,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6F99B212B640C1400ED4A53 /* ExploreView.swift in Sources */,
 				D69E5D022B62B0A20088728F /* SignUpView.swift in Sources */,
 				D6F99B1B2B63EB8200ED4A53 /* FeedView.swift in Sources */,
 				D6F99B0D2B63DD1100ED4A53 /* TextFieldModifier.swift in Sources */,
@@ -392,7 +426,9 @@
 				D6218C962B62637300855E4B /* SignInView.swift in Sources */,
 				D6F99B1D2B63F12C00ED4A53 /* AppCell.swift in Sources */,
 				D6F99B102B63DF6D00ED4A53 /* ButtonModifiler.swift in Sources */,
+				D6C2081F2B6411DE00671856 /* AppUserCell.swift in Sources */,
 				D6F99B122B63E1F000ED4A53 /* TextModifiler.swift in Sources */,
+				D6C2081D2B64113200671856 /* AppProfileImage.swift in Sources */,
 				D60E12D52B62598A00AE4425 /* ContentView.swift in Sources */,
 				D60E12D32B62598A00AE4425 /* drainApp.swift in Sources */,
 			);
