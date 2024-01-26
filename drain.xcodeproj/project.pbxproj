@@ -101,9 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				D60E12D12B62598A00AE4425 /* drain */,
-				D60E12D62B62598B00AE4425 /* Assets.xcassets */,
-				D60E12D22B62598A00AE4425 /* drainApp.swift */,
-				D60E12D42B62598A00AE4425 /* ContentView.swift */,
 				D60E12E22B62598B00AE4425 /* drainTests */,
 				D60E12EC2B62598B00AE4425 /* drainUITests */,
 				D60E12D02B62598A00AE4425 /* Products */,
@@ -130,6 +127,9 @@
 				D60E12D82B62598B00AE4425 /* Preview Content */,
 				D6218C8F2B62621700855E4B /* Services */,
 				D6218C8E2B6261F900855E4B /* Utils */,
+				D60E12D62B62598B00AE4425 /* Assets.xcassets */,
+				D60E12D42B62598A00AE4425 /* ContentView.swift */,
+				D60E12D22B62598A00AE4425 /* drainApp.swift */,
 			);
 			path = drain;
 			sourceTree = "<group>";
