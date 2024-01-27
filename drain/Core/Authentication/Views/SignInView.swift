@@ -31,31 +31,31 @@ struct SignInView: View {
                 VStack {
                     HStack {
                         Text("Username")
-                            .modifier(TextModifiler())
+                            .modifier(AppTextModifiler())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading)
                         Spacer()
                     }
                     TextField("Enter your email", text: $email)
                         .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
-                        .modifier(TextFieldModifier())
+                        .modifier(AppTextFieldModifier())
                     
                     HStack {
                         Text("Password")
-                            .modifier(TextModifiler())
+                            .modifier(AppTextModifiler())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading)
                         Spacer()
                     }
                     SecureField("Enter your password", text: $password)
-                        .modifier(TextFieldModifier())
+                        .modifier(AppTextFieldModifier())
                 }
                 
                 NavigationLink {
                     Text("Forgot Password")
                 } label: {
                     Text("Forgot Password?")
-                        .modifier(TextModifiler())
+                        .modifier(AppTextModifiler())
                         .padding(.trailing)
                         .frame(maxWidth: .infinity, alignment: .trailing)
                 }
@@ -64,7 +64,7 @@ struct SignInView: View {
                     
                 } label: {
                     Text("Sign In")
-                        .modifier(ButtonModifiler())
+                        .modifier(AppButtonModifiler())
                 }
                 
                 Spacer()

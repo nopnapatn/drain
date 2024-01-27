@@ -26,49 +26,49 @@ struct SignUpView: View {
             VStack {
                 HStack {
                     Text("Username")
-                        .modifier(TextModifiler())
+                        .modifier(AppTextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading)
                     Spacer()
                 }
                 TextField("Enter your username", text: $username)
-                    .modifier(TextFieldModifier())
+                    .modifier(AppTextFieldModifier())
                 
                 HStack {
                     Text("Email")
-                        .modifier(TextModifiler())
+                        .modifier(AppTextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading)
                     Spacer()
                 }
                 TextField("Enter your email", text: $email)
-                    .modifier(TextFieldModifier())
+                    .modifier(AppTextFieldModifier())
                 
                 HStack {
                     Text("Password")
-                        .modifier(TextModifiler())
+                        .modifier(AppTextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading)
                     Spacer()
                 }
                 SecureField("Enter your password", text: $password)
-                    .modifier(TextFieldModifier())
+                    .modifier(AppTextFieldModifier())
                 
                 HStack {
                     Text("Confirm Password")
-                        .modifier(TextModifiler())
+                        .modifier(AppTextModifiler())
                         .frame(maxWidth: .infinity, alignment: .leading)
                         .padding(.leading)
                     Spacer()
                 }
                 SecureField("Enter your confirm password", text: $confirmPassword)
-                    .modifier(TextFieldModifier())
+                    .modifier(AppTextFieldModifier())
                 
                 Button {
                     
                 } label: {
                     Text("Sign Up")
-                        .modifier(ButtonModifiler())
+                        .modifier(AppButtonModifiler())
                 }
                 .padding(.vertical)
                 

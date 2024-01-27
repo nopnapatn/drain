@@ -1,5 +1,5 @@
 //
-//  ButtonModifiler.swift
+//  AppButtonModifiler.swift
 //  drain
 //
 //  Created by Nopnapat Norasri on 26/1/2567 BE.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ButtonModifiler: ViewModifier {
+struct AppButtonModifiler: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.subheadline)

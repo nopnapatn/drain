@@ -1,5 +1,5 @@
 //
-//  TextModifiler.swift
+//  AppTextModifiler.swift
 //  drain
 //
 //  Created by Nopnapat Norasri on 26/1/2567 BE.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct TextModifiler: ViewModifier {
+struct AppTextModifiler: ViewModifier {
     func body(content: Content) -> some View {
         content
             .font(.footnote)
