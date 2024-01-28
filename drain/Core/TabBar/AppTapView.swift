@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AppTabView: View {
     @State private var selectedTab = 0
+    @State private var showCreateDrainView = false
     
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -17,7 +18,21 @@ struct AppTabView: View {
                 }
                 .onAppear { selectedTab = 0 }
                 .tag(0)
-                     
+                .safeAreaInset(edge: .bottom, alignment: .trailing) {
+                    Button {
+                        selectedTab = 5
+                    } label: {
+                        Image(systemName: "plus")
+                            .font(.system(
+                                size: 52,
+                                weight: .light,
+                                design: .rounded))
+                            .symbolVariant(.circle.fill)
+                            .foregroundColor(.black)
+                            .padding()
+                    }
+                }
+            
             ExploreView()
                 .tabItem { Image(systemName: "magnifyingglass")
                 }
@@ -42,6 +57,11 @@ struct AppTabView: View {
                 .onAppear { selectedTab = 4 }
                 .tag(4)
         }
+        .onChange(of: selectedTab) {
+            showCreateDrainView = selectedTab == 5
+        }
+        .sheet(isPresented: $showCreateDrainView, onDismiss: {selectedTab = 0}, content: { CreateDrainView()
+        })
         .tint(.black)
     }
 }

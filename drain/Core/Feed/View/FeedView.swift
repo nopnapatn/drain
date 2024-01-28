@@ -24,20 +24,7 @@ struct FeedView: View {
             }
             .navigationTitle("Drain")
             .navigationBarTitleDisplayMode(.inline)
-            .safeAreaInset(edge: .bottom, alignment: .trailing) {
-                Button {
-                    
-                } label: {
-                    Image(systemName: "plus")
-                        .font(.system(
-                            size: 52,
-                            weight: .light,
-                            design: .rounded))
-                        .symbolVariant(.circle.fill)
-                        .foregroundColor(.black)
-                        .padding()
-                }
-            }
+            
             
         }
         .toolbar {

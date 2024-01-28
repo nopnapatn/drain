@@ -21,6 +21,7 @@
 		D6C2081D2B64113200671856 /* AppProfileImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C2081C2B64113200671856 /* AppProfileImage.swift */; };
 		D6C2081F2B6411DE00671856 /* AppUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C2081E2B6411DE00671856 /* AppUserCell.swift */; };
 		D6C208242B6416E600671856 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C208232B6416E600671856 /* ProfileView.swift */; };
+		D6E0B25E2B667A5A001CFEA3 /* CreateDrainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E0B25D2B667A5A001CFEA3 /* CreateDrainView.swift */; };
 		D6F99B0D2B63DD1100ED4A53 /* AppTextFieldModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B0C2B63DD1100ED4A53 /* AppTextFieldModifier.swift */; };
 		D6F99B102B63DF6D00ED4A53 /* AppButtonModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B0F2B63DF6D00ED4A53 /* AppButtonModifiler.swift */; };
 		D6F99B122B63E1F000ED4A53 /* AppTextModifiler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6F99B112B63E1F000ED4A53 /* AppTextModifiler.swift */; };
@@ -65,6 +66,7 @@
 		D6C2081C2B64113200671856 /* AppProfileImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppProfileImage.swift; sourceTree = "<group>"; };
 		D6C2081E2B6411DE00671856 /* AppUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUserCell.swift; sourceTree = "<group>"; };
 		D6C208232B6416E600671856 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		D6E0B25D2B667A5A001CFEA3 /* CreateDrainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateDrainView.swift; sourceTree = "<group>"; };
 		D6F99B0C2B63DD1100ED4A53 /* AppTextFieldModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextFieldModifier.swift; sourceTree = "<group>"; };
 		D6F99B0F2B63DF6D00ED4A53 /* AppButtonModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButtonModifiler.swift; sourceTree = "<group>"; };
 		D6F99B112B63E1F000ED4A53 /* AppTextModifiler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextModifiler.swift; sourceTree = "<group>"; };
@@ -278,6 +280,22 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		D6E0B25A2B6679E0001CFEA3 /* DrainCreation */ = {
+			isa = PBXGroup;
+			children = (
+				D6E0B25B2B6679FB001CFEA3 /* View */,
+			);
+			path = DrainCreation;
+			sourceTree = "<group>";
+		};
+		D6E0B25B2B6679FB001CFEA3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D6E0B25D2B667A5A001CFEA3 /* CreateDrainView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		D6F99B0B2B63D9E700ED4A53 /* ViewModifilers */ = {
 			isa = PBXGroup;
 			children = (
@@ -299,6 +317,7 @@
 		D6F99B182B63EB6200ED4A53 /* Feed */ = {
 			isa = PBXGroup;
 			children = (
+				D6E0B25A2B6679E0001CFEA3 /* DrainCreation */,
 				D6F99B192B63EB6B00ED4A53 /* View */,
 			);
 			path = Feed;
@@ -466,6 +485,7 @@
 				D6F99B0D2B63DD1100ED4A53 /* AppTextFieldModifier.swift in Sources */,
 				D6F99B172B63E79D00ED4A53 /* AppTapView.swift in Sources */,
 				D6218C962B62637300855E4B /* SignInView.swift in Sources */,
+				D6E0B25E2B667A5A001CFEA3 /* CreateDrainView.swift in Sources */,
 				D6F99B1D2B63F12C00ED4A53 /* AppDrainCell.swift in Sources */,
 				D6F99B102B63DF6D00ED4A53 /* AppButtonModifiler.swift in Sources */,
 				D68EEBC72B641D6D00B805C1 /* ProfileDrainFilter.swift in Sources */,
