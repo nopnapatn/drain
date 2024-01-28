@@ -8,10 +8,7 @@
 import SwiftUI
 
 struct SignUpView: View {
-    @State private var username = ""
-    @State private var email = ""
-    @State private var password = ""
-    @State private var confirmPassword = ""
+    @StateObject var viewModel = SignUpViewModel()
     @Environment(\.dismiss) var dismiss
     
     var body: some View {
@@ -31,7 +28,17 @@ struct SignUpView: View {
                         .padding(.leading)
                     Spacer()
                 }
-                TextField("Enter your username", text: $username)
+                TextField("Enter your username", text: $viewModel.username)
+                    .modifier(AppTextFieldModifier())
+                
+                HStack {
+                    Text("name")
+                        .modifier(AppTextModifiler())
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .padding(.leading)
+                    Spacer()
+                }
+                TextField("Enter your name", text: $viewModel.name)
                     .modifier(AppTextFieldModifier())
                 
                 HStack {
@@ -41,7 +48,8 @@ struct SignUpView: View {
                         .padding(.leading)
                     Spacer()
                 }
-                TextField("Enter your email", text: $email)
+                TextField("Enter your email", text: $viewModel.email
+                )
                     .modifier(AppTextFieldModifier())
                 
                 HStack {
@@ -51,7 +59,7 @@ struct SignUpView: View {
                         .padding(.leading)
                     Spacer()
                 }
-                SecureField("Enter your password", text: $password)
+                SecureField("Enter your password", text: $viewModel.password)
                     .modifier(AppTextFieldModifier())
                 
                 HStack {
@@ -61,11 +69,11 @@ struct SignUpView: View {
                         .padding(.leading)
                     Spacer()
                 }
-                SecureField("Enter your confirm password", text: $confirmPassword)
+                SecureField("Enter your confirm password", text: $viewModel.confirmPassword)
                     .modifier(AppTextFieldModifier())
                 
                 Button {
-                    
+                    Task { try await viewModel.createUser() }
                 } label: {
                     Text("Sign Up")
                         .modifier(AppButtonModifiler())
