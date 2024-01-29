@@ -39,7 +39,7 @@ struct AppTabView: View {
                 .onAppear { selectedTab = 1 }
                 .tag(1)
             
-            ProfileView()
+            CurrentUserProfileView()
                 .tabItem { Image(systemName: selectedTab == 2 ? "person.fill" : "person").environment(\.symbolVariants, selectedTab == 2 ? .fill : .none)
                 }
                 .onAppear { selectedTab = 2 }
