@@ -8,26 +8,28 @@
 import SwiftUI
 
 struct AppDrainCell: View {
+    let drain: Drain
+    
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                AppProfileImage(user: nil, size: .small)
+                AppProfileImage(user: drain.user, size: .small)
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
                         HStack {
-                            Text("neuw")
+                            Text(drain.user?.name ?? "")
                                 .font(.footnote)
                                 .fontWeight(.semibold)
                             
-                            Text("@nopnapatn")
+                            Text("@\(drain.user?.username ?? "")")
                                 .font(.footnote)
                                 .foregroundColor(.gray)
                         }
                         
                         Spacer()
                         
-                        Text("27m")
+                        Text(drain.timestamp.timestampString())
                             .font(.caption)
                             .foregroundColor(Color(.systemGray3))
                         
@@ -39,7 +41,7 @@ struct AppDrainCell: View {
                         }
                     }
                     
-                    Text("Hi there, Welcome to drain")
+                    Text(drain.caption)
                         .font(.footnote)
                         .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                     
@@ -73,17 +75,20 @@ struct AppDrainCell: View {
                     }
                     .foregroundColor(.black)
                     .padding(.top, 8)
-                    
                 }
             }
-            
-//            Divider()
         }
         .padding(.horizontal)
         .padding(.top, 8)
     }
 }
 
-#Preview {
-    AppDrainCell()
+//#Preview {
+//    AppDrainCell()
+//}
+
+struct AppDrainCell_Preview: PreviewProvider {
+    static var previews: some View {
+        AppDrainCell(drain: dev.drain)
+    }
 }

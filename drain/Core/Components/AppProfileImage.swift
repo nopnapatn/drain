@@ -38,11 +38,13 @@ struct AppProfileImage: View {
                 .resizable()
                 .scaledToFit()
                 .frame(width: size.dimension, height: size.dimension)
+//                .frame(width: 40, height: 40)
                 .clipShape(Circle())
         } else {
             Image(systemName: "person.circle.fill")
                 .resizable()
                 .frame(width: size.dimension, height: size.dimension)
+//                .frame(width: 40, height: 40)
                 .foregroundColor(Color(.systemGray4))
         }
     }

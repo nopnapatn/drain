@@ -43,7 +43,7 @@ struct EditProfileView: View {
                                     .frame(width: 40, height: 40)
                                     .clipShape(Circle())
                             } else {
-                                AppProfileImage(user: user, size: .medium)
+                                AppProfileImage(user: user, size: .small)
                             }
                         }
                     }

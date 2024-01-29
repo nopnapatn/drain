@@ -8,24 +8,22 @@
 import SwiftUI
 
 struct FeedView: View {
+    @StateObject var viewModel = FeedViewModel()
+    
     var body: some View {
         NavigationStack {
             ScrollView(showsIndicators: false) {
                 LazyVStack {
-                    ForEach(0 ... 10, id: \.self) {
-                        cell in AppDrainCell()
+                    ForEach(viewModel.drains) { drain in AppDrainCell(drain: drain)
                         Divider()
                     }
                 }
-                
             }
             .refreshable {
-                print("DEBUG: Refresh Cell")
+                Task { try await viewModel.fetchDrains() }
             }
             .navigationTitle("Drain")
             .navigationBarTitleDisplayMode(.inline)
-            
-            
         }
         .toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {

@@ -23,7 +23,7 @@ struct CreateDrainView: View {
                     AppProfileImage(user: user, size: .small)
                     
                     VStack(alignment: .leading, spacing: 4) {
-                        Text("neuw")
+                        Text(user?.name ?? "")
                             .fontWeight(.semibold)
                         
                         TextField("Start a drain..", text: $caption, axis: .vertical)

@@ -8,8 +8,13 @@
 import SwiftUI
 
 struct UserContentListView: View {
+    @StateObject var viewModel: UserContentListViewModel
     @State private var selectedFilter: ProfileDrainFilter = .drains
     @Namespace var animation
+    
+    init(user: User) {
+        self._viewModel = StateObject(wrappedValue: UserContentListViewModel(user: user))
+    }
     
     private var filterBarWidth: CGFloat {
         let count = CGFloat(ProfileDrainFilter.allCases.count)
@@ -45,8 +50,8 @@ struct UserContentListView: View {
             }
             
             LazyVStack {
-                ForEach(0 ... 10, id: \.self) {
-                    drain in AppDrainCell()
+                ForEach(viewModel.drains) { drain in
+                    AppDrainCell(drain: drain)
                 }
             }
         }
@@ -54,6 +59,12 @@ struct UserContentListView: View {
     }
 }
 
-#Preview {
-    UserContentListView()
+//#Preview {
+//    UserContentListView()
+//}
+
+struct UserContentListValue_Preview: PreviewProvider {
+    static var previews: some View {
+        UserContentListView(user: dev.user)
+    }
 }
