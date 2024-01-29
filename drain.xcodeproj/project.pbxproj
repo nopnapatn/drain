@@ -10,6 +10,8 @@
 		D6094E122B67A44B0008B513 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6094E112B67A44B0008B513 /* User.swift */; };
 		D6094E142B67A8A50008B513 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6094E132B67A8A50008B513 /* UserService.swift */; };
 		D6094E172B67A9B00008B513 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6094E162B67A9B00008B513 /* ProfileViewModel.swift */; };
+		D6094E1A2B67B11A0008B513 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6094E192B67B11A0008B513 /* ExploreViewModel.swift */; };
+		D6094E1C2B67B2CF0008B513 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6094E1B2B67B2CF0008B513 /* PreviewProvider.swift */; };
 		D60E12D32B62598A00AE4425 /* drainApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E12D22B62598A00AE4425 /* drainApp.swift */; };
 		D60E12D52B62598A00AE4425 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D60E12D42B62598A00AE4425 /* ContentView.swift */; };
 		D60E12D72B62598B00AE4425 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D60E12D62B62598B00AE4425 /* Assets.xcassets */; };
@@ -64,6 +66,8 @@
 		D6094E112B67A44B0008B513 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		D6094E132B67A8A50008B513 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		D6094E162B67A9B00008B513 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		D6094E192B67B11A0008B513 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		D6094E1B2B67B2CF0008B513 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		D60E12CF2B62598A00AE4425 /* drain.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = drain.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D60E12D22B62598A00AE4425 /* drainApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drainApp.swift; sourceTree = "<group>"; };
 		D60E12D42B62598A00AE4425 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,14 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		D6094E182B67B0EF0008B513 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				D6094E192B67B11A0008B513 /* ExploreViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
 		D60E12C62B62598A00AE4425 = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				D60E12D22B62598A00AE4425 /* drainApp.swift */,
+				D6094E152B67A99B0008B513 /* ViewModel */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -227,6 +240,7 @@
 		D6218C8D2B6261D800855E4B /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D6094E1B2B67B2CF0008B513 /* PreviewProvider.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -328,7 +342,6 @@
 		D6C208202B6416C400671856 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				D6094E152B67A99B0008B513 /* ViewModel */,
 				D62A4F342B64CB2C00F686EC /* EditProfile */,
 				D6C208252B641D0D00671856 /* Models */,
 				D6C208212B6416CF00671856 /* View */,
@@ -407,6 +420,7 @@
 		D6F99B1E2B640BE900ED4A53 /* Explore */ = {
 			isa = PBXGroup;
 			children = (
+				D6094E182B67B0EF0008B513 /* ViewModels */,
 				D6F99B1F2B640BF500ED4A53 /* View */,
 			);
 			path = Explore;
@@ -581,9 +595,11 @@
 				D6C2081D2B64113200671856 /* AppProfileImage.swift in Sources */,
 				D67E3AC92B6691AB00018083 /* SignUpViewModel.swift in Sources */,
 				D664635B2B669DB50028F7A8 /* SignInViewModel.swift in Sources */,
+				D6094E1A2B67B11A0008B513 /* ExploreViewModel.swift in Sources */,
 				D60E12D52B62598A00AE4425 /* ContentView.swift in Sources */,
 				D6C208242B6416E600671856 /* ProfileView.swift in Sources */,
 				D60E12D32B62598A00AE4425 /* drainApp.swift in Sources */,
+				D6094E1C2B67B2CF0008B513 /* PreviewProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

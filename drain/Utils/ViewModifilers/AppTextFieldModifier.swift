@@ -16,5 +16,6 @@ struct AppTextFieldModifier: ViewModifier {
             .cornerRadius(10)
             .padding(.horizontal, 24)
             .padding(.bottom)
+            .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
     }
 }

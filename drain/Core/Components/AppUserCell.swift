@@ -8,15 +8,17 @@
 import SwiftUI
 
 struct AppUserCell: View {
+    let user: User
+    
     var body: some View {
         HStack {
             AppProfileImage()
             
             VStack(alignment: .leading) {
-                Text("neuw")
+                Text(user.name)
                     .fontWeight(.semibold)
                 
-                Text("@nopnapatn")
+                Text("@\(user.username)")
             }
             .font(.footnote)
             
@@ -35,6 +37,12 @@ struct AppUserCell: View {
     }
 }
 
-#Preview {
-    AppUserCell()
+//#Preview {
+//    AppUserCell(user: dev.user)
+//}
+
+struct AppUserCell_Preview: PreviewProvider {
+    static var previews: some View {
+        AppUserCell(user: dev.user)
+    }
 }

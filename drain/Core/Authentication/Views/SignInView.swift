@@ -36,7 +36,6 @@ struct SignInView: View {
                         Spacer()
                     }
                     TextField("Enter your email", text: $viewModel.email)
-                        .autocapitalization(/*@START_MENU_TOKEN@*/.none/*@END_MENU_TOKEN@*/)
                         .modifier(AppTextFieldModifier())
                     
                     HStack {
