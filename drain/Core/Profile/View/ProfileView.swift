@@ -8,12 +8,17 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @StateObject var viewModel = ProfileViewModel()
     @State private var selectedFilter: ProfileDrainFilter = .drains
     @Namespace var animation
     
     private var filterBarWidth: CGFloat {
         let count = CGFloat(ProfileDrainFilter.allCases.count)
         return UIScreen.main.bounds.width / count - 16
+    }
+    
+    private var currentUser: User? {
+        return viewModel.currentUser
     }
     
     var body: some View {
@@ -25,16 +30,19 @@ struct ProfileView: View {
                             VStack(alignment: .leading, spacing: 4) {
                                 AppProfileImage()
                                 
-                                Text("neuw")
+                                Text(currentUser?.name ?? "")
                                     .font(.title2)
                                     .fontWeight(.semibold)
                                 
-                                Text("@nopnapatn")
+                                Text("@\(currentUser?.username ?? "")")
                                     .font(.subheadline)
+                                    .foregroundColor(Color(.systemGray))
                             }
                             
-                            Text("description: Lorem Ipsum is simply dummy text of the printing and typesetting industry.")
-                                .font(.footnote)
+                            if let bio = currentUser?.bio {
+                                Text(bio)
+                                    .font(.footnote)
+                            }
                             
                             HStack {
                                 Text("7 Following")
