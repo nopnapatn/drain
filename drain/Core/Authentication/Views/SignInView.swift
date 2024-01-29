@@ -29,7 +29,7 @@ struct SignInView: View {
                 
                 VStack {
                     HStack {
-                        Text("Username")
+                        Text("Email")
                             .modifier(AppTextModifiler())
                             .frame(maxWidth: .infinity, alignment: .leading)
                             .padding(.leading)
