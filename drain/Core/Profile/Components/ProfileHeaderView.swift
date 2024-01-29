@@ -18,7 +18,7 @@ struct ProfileHeaderView: View {
         HStack(alignment: .top) {
             VStack(alignment: .leading, spacing: 12) {
                 VStack(alignment: .leading, spacing: 4) {
-                    AppProfileImage()
+                    AppProfileImage(user: user, size: .medium)
                     
                     Text(user?.name ?? "")
                         .font(.title2)

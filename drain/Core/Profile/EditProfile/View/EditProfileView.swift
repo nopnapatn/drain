@@ -6,11 +6,16 @@
 //
 
 import SwiftUI
+import PhotosUI
 
 struct EditProfileView: View {
+    @StateObject var viewModel = EditProfileViewModel()
     @State private var bio = ""
     @State private var link = ""
     @State private var isPrivateAccount = false
+    @Environment(\.dismiss) var dismiss
+    
+    let user: User
     
     var body: some View {
         NavigationStack {
@@ -30,7 +35,17 @@ struct EditProfileView: View {
                         
                         Spacer()
                         
-                        AppProfileImage()
+                        PhotosPicker(selection: $viewModel.selectedItem) {
+                            if let image = viewModel.profileImage {
+                                image
+                                    .resizable()
+                                    .scaledToFit()
+                                    .frame(width: 40, height: 40)
+                                    .clipShape(Circle())
+                            } else {
+                                AppProfileImage(user: user, size: .medium)
+                            }
+                        }
                     }
                     
                     Divider()
@@ -72,7 +87,7 @@ struct EditProfileView: View {
             .toolbar {
                 ToolbarItem(placement: .navigationBarLeading) {
                     Button("Cancel") {
-                        
+                        dismiss()
                     }
                     .font(.subheadline)
                     .foregroundColor(.black)
@@ -80,7 +95,10 @@ struct EditProfileView: View {
                 
                 ToolbarItem(placement: .navigationBarTrailing) {
                     Button("Done") {
-                        
+                        Task { 
+                            try await viewModel.updateUserData()
+                            dismiss()
+                        }
                     }
                     .font(.subheadline)
                     .fontWeight(.semibold)
@@ -91,6 +109,12 @@ struct EditProfileView: View {
     }
 }
 
-#Preview {
-    EditProfileView()
+//#Preview {
+//    EditProfileView()
+//}
+
+struct EditProfileView_Preview: PreviewProvider {
+    static var previews: some View {
+        EditProfileView(user: dev.user)
+    }
 }

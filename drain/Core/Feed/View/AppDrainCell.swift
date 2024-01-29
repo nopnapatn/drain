@@ -11,11 +11,7 @@ struct AppDrainCell: View {
     var body: some View {
         VStack {
             HStack(alignment: .top, spacing: 12) {
-                Image("drain-app-icon")
-                    .resizable()
-                    .scaledToFill()
-                    .frame(width: 40, height: 40)
-                    .clipShape(/*@START_MENU_TOKEN@*/Circle()/*@END_MENU_TOKEN@*/)
+                AppProfileImage(user: nil, size: .small)
                 
                 VStack(alignment: .leading, spacing: 4) {
                     HStack {
